@@ -5811,9 +5811,11 @@ footer.color-yellow .footer-bottom p a {
     gap: 12px;
 }
 
-.brand-logo {
-    height: 42px;
+.logo-phg {
+  height: 170px;
+    margin-left: 12px;
 }
+
 
 .brand-divider {
     width: 0.5px;
@@ -5827,6 +5829,16 @@ footer.color-yellow .footer-bottom p a {
     letter-spacing: 0.4px;
     color: var(--color-paragraph);
     white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .brand-divider,
+  .brand-text {
+    display: none !important;
+  }
+  .brand-logo {
+   width: 50%;          /* 🔥 kunci utama */
+  }
 }
 
 /* ============================================================== 
